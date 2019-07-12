@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+BAD_CONTINUATION="C0330"
+
+BARE_EXCEPT="W0702"
+
+FIXME="W0511"
+
+INVALID_NAME="C0103"
+
+LINE_TOO_LONG="C0301"
+
+MISSING_DOCSTRING="C0111"
+
+NO_SELF_USE="R0201"
+
+PROTECTED_ACCESS="W0212"
+
+TOO_FEW_PUBLIC_METHODS="R0903"
+
+TOO_MANY_INSTANCE_ATTRIBUTES="R0902"
+
+TOO_MANY_STATEMENTS="R0915"
+
+pylint \
+  --disable=$BAD_CONTINUATION \
+  --disable=$BARE_EXCEPT \
+  --disable=$FIXME \
+  --disable=$INVALID_NAME \
+  --disable=$LINE_TOO_LONG \
+  --disable=$MISSING_DOCSTRING \
+  --disable=$NO_SELF_USE \
+  --disable=$PROTECTED_ACCESS \
+  --disable=$TOO_FEW_PUBLIC_METHODS \
+  --disable=$TOO_MANY_INSTANCE_ATTRIBUTES \
+  --disable=$TOO_MANY_STATEMENTS \
+  *.py
