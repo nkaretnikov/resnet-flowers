@@ -4,6 +4,7 @@
 .Python
 .ipynb_checkpoints
 pip-selfcheck.json
+__pycache__/
 bin/
 include/
 lib/
