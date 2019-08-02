@@ -32,15 +32,17 @@ CONFIG = {
 }
 
 def main():
-    pkl_dir  = sys.argv[1]  # ./model
-    pkl_file = sys.argv[2]  # resnet-flowers.pkl
+    port     = int(sys.argv[1])  # 5000
+    pkl_dir  = sys.argv[2]  # ./model
+    pkl_file = sys.argv[3]  # resnet-flowers.pkl
+
     model = Model(pkl_dir=pkl_dir, pkl_file=pkl_file)
 
     document = Document(config=CONFIG)
 
     app = App(debug=False, model=model, document=document, config=CONFIG)
 
-    uvicorn.run(app.app, host='0.0.0.0', port=8000)
+    uvicorn.run(app.app, host='0.0.0.0', port=port)
 
 if __name__ == '__main__':
     main()
