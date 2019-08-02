@@ -35,7 +35,6 @@ Pillow==6.1.0
 plac==0.9.6
 preshed==2.0.1
 pylint==2.3.1
-pynvx==1.0.0
 pyparsing==2.4.0
 python-dateutil==2.8.0
 python-multipart==0.0.5
@@ -49,8 +48,10 @@ spacy==2.1.6
 srsly==0.0.7
 starlette==0.12.2
 thinc==7.0.8
-torch==1.1.0.post2
-torchvision==0.3.0
+torch==1.1.0; sys_platform == 'darwin'
+torchvision==0.3.0; sys_platform == 'darwin'
+https://download.pytorch.org/whl/cpu/torch-1.1.0-cp37-cp37m-linux_x86_64.whl; sys_platform == 'linux'
+https://download.pytorch.org/whl/cpu/torchvision-0.3.0-cp37-cp37m-linux_x86_64.whl; sys_platform == 'linux'
 tqdm==4.32.2
 typed-ast==1.4.0
 urllib3==1.25.3
