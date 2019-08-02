@@ -32,7 +32,7 @@ CONFIG = {
 }
 
 def main():
-    pkl_dir  = sys.argv[1]  # ../model
+    pkl_dir  = sys.argv[1]  # ./model
     pkl_file = sys.argv[2]  # resnet-flowers.pkl
     model = Model(pkl_dir=pkl_dir, pkl_file=pkl_file)
 
