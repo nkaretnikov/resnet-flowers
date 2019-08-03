@@ -23,3 +23,15 @@ jupyter notebook resnet-flowers.ipynb
 
 The `app` directory contains a "Flower classifier" web app, which
 utilizes the created model.
+
+As of writing this, the app is running on
+[Heroku](https://resnet-flowers.herokuapp.com).
+
+To deploy:
+```
+./app/scripts/deploy-heroku.sh
+```
+
+Heroku-related settings are in `Procfile`, `requirements.txt`, and
+`runtime.txt`.  Note that a CPU version of pytorch is used on Linux due to the
+[slug size limit](https://devcenter.heroku.com/articles/slug-compiler#slug-size).
