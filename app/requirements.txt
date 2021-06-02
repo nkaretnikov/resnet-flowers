@@ -54,7 +54,7 @@ https://download.pytorch.org/whl/cpu/torch-1.1.0-cp37-cp37m-linux_x86_64.whl; sy
 https://download.pytorch.org/whl/cpu/torchvision-0.3.0-cp37-cp37m-linux_x86_64.whl; sys_platform == 'linux'
 tqdm==4.32.2
 typed-ast==1.4.0
-urllib3==1.25.3
+urllib3==1.26.5
 uvicorn==0.8.4
 uvloop==0.12.2
 wasabi==0.2.2
